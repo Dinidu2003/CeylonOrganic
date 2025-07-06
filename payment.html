@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment - Ceylon Organic</title>
+  
+  <link rel="stylesheet" href="payment.css">
+  <link rel="stylesheet" href="cart.css">
+  <link rel="stylesheet" href="ship.css">
+
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header (same as shipping.html) -->
+  <header>
+    <div class="video-container">
+      <video autoplay muted loop class="video-bg">
+        <source src="videos/3.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    
+    <img src="photos/logo.png" alt="Ceylon Organic Logo" class="nav-logo">
+    <nav>
+      <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="product.html">Products</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="order.html">Order Status</a></li>
+      </ul>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+    
+    <a href="product.html" class="header-btn">Explore Our Products</a>
+  </header>
+
+  <main class="checkout-page">
+    <div class="container">
+      <div class="page-title-container">
+        <h1 class="page-title">Payment Information</h1>
+        <div class="breadcrumb">
+          <a href="home.html">Home</a> / 
+          <a href="product.html">Products</a> / 
+          <a href="cart.html">Cart</a> / 
+          <a href="ship.html">Shipping</a> / 
+          <span>Payment</span>
+        </div>
+      </div>
+
+      <div class="navigation-buttons">
+        <a href="ship.html" class="btn-back">Back to Shipping </a>
+        <a href="confirm.html" class="btn-continue">Continue to Confirmation</a>
+      </div>
+
+      <!-- Checkout Progress -->
+      <div class="checkout-progress">
+        <div class="progress-step">
+          <a href="cart.html">
+            <div class="step-circle">1</div>
+            <div class="step-name">Cart</div>
+          </a>
+        </div>
+        <div class="progress-line"></div>
+        <div class="progress-step">
+          <a href="ship.html">
+            <div class="step-circle">2</div>
+            <div class="step-name">Shipping</div>
+          </a>
+        </div>
+        <div class="progress-line"></div>
+        <div class="progress-step active">
+          <a href="payment.html">
+            <div class="step-circle">3</div>
+            <div class="step-name">Payment</div>
+          </a>
+        </div>
+        <div class="progress-line"></div>
+        <div class="progress-step">
+          <a href="confirm.html">
+            <div class="step-circle">4</div>
+            <div class="step-name">Confirmation</div>
+          </a>
+        </div>
+      </div>
+
+      <div class="checkout-layout">
+        <!-- Payment Form -->
+        <div class="checkout-form-container">
+          <form id="payment-form">
+            <h2>Payment Method</h2>
+            
+            <div class="payment-methods">
+              <label class="payment-method">
+                <input type="radio" name="payment-method" value="credit-card" checked>
+                <div class="method-info">
+                  <div class="method-title">Credit/Debit Card</div>
+                  <div class="method-desc">Pay with Visa, MasterCard, or American Express</div>
+                </div>
+                <div class="method-icon">
+                  <i class="fab fa-cc-visa"></i>
+                  <i class="fab fa-cc-mastercard"></i>
+                  <i class="fab fa-cc-amex"></i>
+                </div>
+              </label>
+              
+              <label class="payment-method">
+                <input type="radio" name="payment-method" value="paypal">
+                <div class="method-info">
+                  <div class="method-title">PayPal</div>
+                  <div class="method-desc">Pay with your PayPal account</div>
+                </div>
+                <div class="method-icon">
+                  <i class="fab fa-cc-paypal"></i>
+                </div>
+              </label>
+              
+              <label class="payment-method">
+                <input type="radio" name="payment-method" value="bank-transfer">
+                <div class="method-info">
+                  <div class="method-title">Bank Transfer</div>
+                  <div class="method-desc">Direct bank transfer</div>
+                </div>
+                <div class="method-icon">
+                  <i class="fas fa-university"></i>
+                </div>
+              </label>
+            </div>
+            
+            <!-- Credit Card Form (shown by default) -->
+            <div id="credit-card-form" class="payment-form-section">
+              <div class="form-group">
+                <label for="card-number">Card Number</label>
+                <div class="input-with-icon">
+                  <input type="text" id="card-number" name="card-number" placeholder="1234 5678 9012 3456" required>
+                  <i class="far fa-credit-card"></i>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="card-name">Name on Card</label>
+                <input type="text" id="card-name" name="card-name" required>
+              </div>
+              
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="card-expiry">Expiry Date</label>
+                  <input type="text" id="card-expiry" name="card-expiry" placeholder="MM/YY" required>
+                </div>
+                <div class="form-group">
+                  <label for="card-cvc">CVC</label>
+                  <div class="input-with-icon">
+                    <input type="text" id="card-cvc" name="card-cvc" placeholder="123" required>
+                    <i class="fas fa-lock"></i>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="form-group checkbox-group">
+                <input type="checkbox" id="save-card" name="save-card">
+                <label for="save-card">Save card for future purchases</label>
+              </div>
+            </div>
+            
+            <!-- PayPal Info (hidden by default) -->
+            <div id="paypal-info" class="payment-form-section" style="display: none;">
+              <div class="payment-method-info">
+                <p>You will be redirected to PayPal to complete your payment securely.</p>
+                <div class="paypal-logo">
+                  <i class="fab fa-cc-paypal"></i>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Bank Transfer Info (hidden by default) -->
+            <div id="bank-transfer-info" class="payment-form-section" style="display: none;">
+              <div class="payment-method-info">
+                <p>Please transfer the total amount to our bank account:</p>
+                <div class="bank-details">
+                  <p><strong>Bank Name:</strong> Commercial Bank of Ceylon</p>
+                  <p><strong>Account Name:</strong> Ceylon Organic (Pvt) Ltd</p>
+                  <p><strong>Account Number:</strong> 1234567890</p>
+                  <p><strong>Branch:</strong> Colombo Main Branch</p>
+                  <p><strong>SWIFT Code:</strong> CCEYLKLX</p>
+                </div>
+                <p class="note">Please include your order number as the payment reference.</p>
+              </div>
+            </div>
+            
+            <h2>Billing Address</h2>
+            <div class="form-group checkbox-group">
+              <input type="checkbox" id="same-as-shipping" name="same-as-shipping" checked>
+              <label for="same-as-shipping">Same as shipping address</label>
+            </div>
+            
+            <div id="billing-address-fields" style="display: none;">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="billing-first-name">First Name</label>
+                  <input type="text" id="billing-first-name" name="billing-first-name">
+                </div>
+                <div class="form-group">
+                  <label for="billing-last-name">Last Name</label>
+                  <input type="text" id="billing-last-name" name="billing-last-name">
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="billing-address">Address</label>
+                <input type="text" id="billing-address" name="billing-address">
+              </div>
+              
+              <div class="form-group">
+                <label for="billing-address2">Address 2 (Optional)</label>
+                <input type="text" id="billing-address2" name="billing-address2">
+              </div>
+              
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="billing-city">City</label>
+                  <input type="text" id="billing-city" name="billing-city">
+                </div>
+                <div class="form-group">
+                  <label for="billing-postal-code">Postal Code</label>
+                  <input type="text" id="billing-postal-code" name="billing-postal-code">
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="billing-country">Country</label>
+                <select id="billing-country" name="billing-country">
+                  <option value="">Select Country</option>
+                  <option value="Sri Lanka" selected>Sri Lanka</option>
+                  <option value="India">India</option>
+                  <option value="USA">United States</option>
+                  <option value="UK">United Kingdom</option>
+                  <option value="Canada">Canada</option>
+                  <option value="Australia">Australia</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+            </div>
+            
+            <!-- Change the form actions div to this: -->
+<div class="form-actions">
+  <a href="ship.html" class="back-btn"><i class="fas fa-arrow-left"></i> Back to Shipping</a>
+  <button type="button" id="complete-order-btn" class="continue-btn">Complete Order <i class="fas fa-arrow-right"></i></button>
+</div>
+
+          </form>
+        </div>
+        
+        <!-- Order Summary -->
+        <div class="checkout-summary">
+          <h2>Order Summary</h2>
+          <div class="summary-items">
+            <!-- Items will be populated by JavaScript -->
+          </div>
+          
+          <div class="shipping-info">
+            <h3>Shipping Information</h3>
+            <div id="shipping-details">
+              <!-- Shipping details will be populated by JavaScript -->
+            </div>
+          </div>
+          
+          <div class="summary-totals">
+            <div class="summary-row">
+              <span>Subtotal</span>
+              <span id="summary-subtotal">Rs 3500</span>
+            </div>
+            <div class="summary-row">
+              <span>Shipping</span>
+              <span id="summary-shipping">Rs 500</span>
+            </div>
+            <div class="summary-row">
+              <span>Tax</span>
+              <span id="summary-tax">Rs 350</span>
+            </div>
+            <div class="summary-row total">
+              <span>Total</span>
+              <span id="summary-total">Rs 4350</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer retained from original -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-col">
+        <h3 class="footer-title">Ceylon Organic</h3>
+        <p>Premium organic spices sourced directly from Sri Lanka's finest spice gardens.</p>
+        <p>Contact us: ceylonorganic@gmai.com</p>
+        <p>Phone: +94 076 779 9288</p>
+      </div>
+      
+      <div class="footer-col">
+        <h3 class="footer-title">Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="product.html">Products</a></li>
+          <li><a href="cart.html">Cart</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="order.html">Order Status</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-col">
+        <h3 class="footer-title">Photo Gallery</h3>
+        <div class="footer-gallery">
+          <img src="photos/8.png" alt="Ceylon Spice Garden" class="gallery-img" data-caption="Our beautiful spice garden in central Sri Lanka">
+          <img src="photos/photo7.png" alt="Spice Harvesting" class="gallery-img" data-caption="Traditional harvesting techniques preserve quality">
+          <img src="photos/photos5.png" alt="Spice Processing" class="gallery-img" data-caption="Carefully processing spices to maintain freshness">
+          <img src="photos/photo1.jpg" alt="Organic Packaging" class="gallery-img" data-caption="Environmentally friendly packaging for all our products">
+          <img src="photos/history.png" alt="Ceylon Spice Market" class="gallery-img" data-caption="Local spice markets where we source our ingredients">
+          <img src="photos/photos5.png" alt="Culinary Applications" class="gallery-img" data-caption="Our spices enhance flavors in traditional cuisine">
+        </div>
+      </div>
+      
+      <div class="footer-col">
+        <h3 class="footer-title">Join Our Newsletter</h3>
+        <p>Subscribe to receive updates, recipes, and exclusive offers.</p>
+        <form>
+          <input type="email" placeholder="Your email address" style="padding: 10px; width: 100%; margin-top: 10px; border: none; border-radius: 5px;">
+          <button type="submit" style="background-color: #4CAF50; color: white; border: none; padding: 10px; width: 100%; margin-top: 10px; border-radius: 5px; cursor: pointer;">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    
+    <div class="copyright">
+      <p>&copy; 2025 Ceylon Organic. All rights reserved.</p>
+    </div>
+  </footer>
+  
+  <a href="#" class="discount-btn">20% OFF FIRST ORDER</a>
+
+  <!-- Add to Cart Notification -->
+  <div class="notification" id="notification">
+    <div class="notification-content">
+      <i class="fas fa-check-circle"></i>
+      <span id="notification-message">Item added to cart!</span>
+    </div>
+  </div>
+
+  <script src="payment.js"></script>
+  <script src="home.js"></script>
+  
+</body>
+</html>

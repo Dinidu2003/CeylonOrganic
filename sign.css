@@ -1,0 +1,48 @@
+/* Signup Specific Styles */
+.password-hint {
+    font-size: 0.8rem;
+    color: #7f8c8d;
+    margin-top: 0.3rem;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.checkbox-group input {
+    width: auto;
+    margin-right: 0.5rem;
+}
+
+.checkbox-group label {
+    font-size: 0.9rem;
+    color: #2c3e50;
+}
+
+.checkbox-group a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.checkbox-group a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* Responsive adjustments for signup form */
+@media (max-width: 480px) {
+    .login-form-container {
+        padding: 1.5rem;
+    }
+    
+    .form-header h2 {
+        font-size: 1.5rem;
+    }
+    
+    .form-group {
+        margin-bottom: 1rem;
+    }
+}

@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="order.css">
+    <title>Order Status - Ceylon Organic</title>
+
+  </head>
+  
+  <body>
+
+    <header>
+      <div class="video-container">
+        <video autoplay muted loop class="video-bg">
+          <source src="videos/4.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      
+      <img src="photos/logo.png" alt="Ceylon Organic Logo" class="nav-logo">
+      <nav>
+      
+        <ul class="nav-links">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="product.html">Products</a></li>
+          <li><a href="cart.html">Cart</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="order.html">Order Status</a></li>
+        </ul>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
+      
+      
+        
+      <a href="product.html" class="header-btn">Explore Our Products</a>
+    </header>
+    
+
+
+    <section class="order-status-section">
+      <div class="container">
+       
+        <div class="order-lookup">
+          <h2 class="section-title">Check Order Status</h2>
+          <p class="section-desc">Enter your order number and email to track your order</p>
+          
+          <form class="lookup-form">
+            <div class="form-group">
+              <label for="order-number">Order Number</label>
+              <input type="text" id="order-number" placeholder="e.g., CO-12345678" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" placeholder="Enter email used for order" required>
+            </div>
+            <button type="submit" class="track-btn">Track Order</button>
+          </form>
+          
+          <div class="order-help">
+            <p>Don't have your order number? <a href="#">Contact Support</a></p>
+          </div>
+        </div>
+        
+    
+        <div class="order-details">
+          <div class="order-header">
+            <div class="order-info">
+              <h2>Order #CO-87654321</h2>
+              <p class="order-date">Placed on March 20, 2025</p>
+            </div>
+            <div class="order-actions">
+              <a href="#" class="action-btn">Print Receipt</a>
+              <a href="#" class="action-btn">Contact Support</a>
+            </div>
+          </div>
+          
+          
+          <div class="status-tracker">
+            <h3 class="tracker-title">Shipment Status</h3>
+            
+            <div class="status-timeline">
+              <div class="status-step completed">
+                <div class="status-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                  </svg>
+                </div>
+                <div class="status-content">
+                  <h4>Order Placed</h4>
+                  <p>March 20, 2025 - 10:23 AM</p>
+                  <span class="status-desc">Your order has been received and confirmed</span>
+                </div>
+              </div>
+              
+              <div class="status-step completed">
+                <div class="status-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                  </svg>
+                </div>
+                <div class="status-content">
+                  <h4>Processing</h4>
+                  <p>March 20, 2025 - 2:45 PM</p>
+                  <span class="status-desc">Your order is being prepared for shipment</span>
+                </div>
+              </div>
+              
+              <div class="status-step active">
+                <div class="status-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                  </svg>
+                </div>
+                <div class="status-content">
+                  <h4>Shipped</h4>
+                  <p>March 21, 2025 - 11:30 AM</p>
+                  <span class="status-desc">Your package is on its way</span>
+                  <div class="tracking-info">
+                    <p>Tracking Number: <a href="#" class="tracking-link">SL987654321LK</a></p>
+                    <p>Carrier: Ceylon Express</p>
+                    <p>Estimated Delivery: March 24, 2025</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="status-step">
+                <div class="status-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                    <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                  </svg>
+                </div>
+                <div class="status-content">
+                  <h4>Delivered</h4>
+                  <p>Pending</p>
+                  <span class="status-desc">Your package will be delivered to your address</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+   
+          <div class="order-items">
+            <h3 class="items-title">Order Items</h3>
+            
+            <div class="item-list">
+     
+              <div class="order-item">
+                <div class="item-image">
+                  <img src="photos/cinnamon.png" alt="Ceylon Cinnamon">
+                </div>
+                <div class="item-details">
+                  <h4 class="item-name">Ceylon Cinnamon</h4>
+                  <p class="item-category">Spices</p>
+                  <p class="item-variant">100g package</p>
+                </div>
+                <div class="item-quantity">
+                  <span>Qty: 1</span>
+                </div>
+                <div class="item-price">
+                  <span>Rs 1000</span>
+                </div>
+              </div>
+              
+       
+              <div class="order-item">
+                <div class="item-image">
+                  <img src="photos/tumeric.png" alt="Turmeric Powder">
+                </div>
+                <div class="item-details">
+                  <h4 class="item-name">Turmeric Powder</h4>
+                  <p class="item-category">Spices</p>
+                  <p class="item-variant">75g package</p>
+                </div>
+                <div class="item-quantity">
+                  <span>Qty: 2</span>
+                </div>
+                <div class="item-price">
+                  <span>Rs 1600</span>
+                </div>
+              </div>
+              
+        
+              <div class="order-item">
+                <div class="item-image">
+                  <img src="photos/basil.png" alt="Holy Basil Leaves">
+                </div>
+                <div class="item-details">
+                  <h4 class="item-name">Holy Basil Leaves</h4>
+                  <p class="item-category">Herbs</p>
+                  <p class="item-variant">50g package</p>
+                </div>
+                <div class="item-quantity">
+                  <span>Qty: 1</span>
+                </div>
+                <div class="item-price">
+                  <span>Rs 900</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          
+          <div class="order-summary">
+            <h3 class="summary-title">Order Summary</h3>
+            
+            <div class="summary-details">
+              <div class="summary-row">
+                <span>Subtotal</span>
+                <span>Rs 3500</span>
+              </div>
+              <div class="summary-row">
+                <span>Shipping</span>
+                <span>Rs 500</span>
+              </div>
+              <div class="summary-row">
+                <span>Tax</span>
+                <span>Rs 350</span>
+              </div>
+              <div class="summary-row total">
+                <span>Total</span>
+                <span>Rs 4350</span>
+              </div>
+            </div>
+          </div>
+          
+          
+          <div class="shipping-info">
+            <div class="info-column">
+              <h3>Shipping Address</h3>
+              <p>John Doe</p>
+              <p>123 Spice Lane</p>
+              <p>Colombo, Western Province 10100</p>
+              <p>Sri Lanka</p>
+              <p>Phone: +94  076 779 9288</p>
+            </div>
+            
+            <div class="info-column">
+              <h3>Payment Method</h3>
+              <div class="payment-method">
+                <img src="photos/visa.jpg" alt="Visa" class="payment-icon">
+                <div class="payment-details">
+                  <p>Visa ending in 4567</p>
+                  <p>Exp: 09/26</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        
+          <div class="order-support">
+            <h3>Need Help?</h3>
+            <p>If you have any questions about your order, please contact our customer service team.</p>
+            <div class="support-options">
+              <a href="#" class="support-option">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                <span>Email Support</span>
+              </a>
+              <a href="#" class="support-option">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+                <span>Call Us</span>
+              </a>
+              <a href="#" class="support-option">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                </svg>
+                <span>Live Chat</span>
+              </a>
+            </div>
+          </div>
+          
+        
+          <div class="order-actions-footer">
+            <a href="product.html" class="action-btn secondary">Continue Shopping</a>
+            <a href="#" class="action-btn primary">Track Package</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <footer>
+      <div class="footer-container">
+    
+        <div class="footer-col">
+          <h3 class="footer-title">Ceylon Organic</h3>
+          <p>Premium organic spices sourced directly from Sri Lanka's finest spice gardens.</p>
+          <p>Contact us: ceylonorganic@gmail.com</p>
+          <p>Phone: +94 076 779 9288</p>
+        </div>
+        
+        
+        <div class="footer-col">
+          <h3 class="footer-title">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="product.html">Products</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="order.html">Order Status</a></li>
+          </ul>
+        </div>
+        
+        
+        <div class="footer-col">
+          <h3 class="footer-title">Photo Gallery</h3>
+          <div class="footer-gallery">
+            <img src="photos/8.png" alt="Ceylon Spice Garden" class="gallery-img" data-caption="Our beautiful spice garden in central Sri Lanka">
+            <img src="photos/photo7.png" alt="Spice Harvesting" class="gallery-img" data-caption="Traditional harvesting techniques preserve quality">
+            <img src="photos/photos5.png" alt="Spice Processing" class="gallery-img" data-caption="Carefully processing spices to maintain freshness">
+            <img src="photos/photo1.jpg" alt="Organic Packaging" class="gallery-img" data-caption="Environmentally friendly packaging for all our products">
+            <img src="photos/history.png" alt="Ceylon Spice Market" class="gallery-img" data-caption="Local spice markets where we source our ingredients">
+            <img src="photos/photos5.png" alt="Culinary Applications" class="gallery-img" data-caption="Our spices enhance flavors in traditional cuisine">
+          </div>
+        </div>
+     
+        <div class="footer-col">
+          <h3 class="footer-title">Join Our Newsletter</h3>
+          <p>Subscribe to receive updates, recipes, and exclusive offers.</p>
+          <form>
+            <input type="email" placeholder="Your email address" style="padding: 10px; width: 100%; margin-top: 10px; border: none; border-radius: 5px;">
+            <button type="submit" style="background-color: #4CAF50; color: white; border: none; padding: 10px; width: 100%; margin-top: 10px; border-radius: 5px; cursor: pointer;">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      
+      <div class="copyright">
+        <p>&copy; 2025 Ceylon Organic. All rights reserved.</p>
+      </div>
+    </footer>
+    
+    <a href="#" class="discount-btn">20% OFF FIRST ORDER</a>
+
+    <script src="order.js"></script>
+    <script src="home.js"></script>
+
+  </body>
+</html>

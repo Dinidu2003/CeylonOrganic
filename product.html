@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="product.css">
+        <title>Product - Ceylon Organic</title>
+    </head>
+    <body>
+        <header>
+            <div class="video-container">
+                <video autoplay muted loop class="video-bg">
+                    <source src="videos/2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            
+            <img src="photos/logo.png" alt="Ceylon Organic Logo" class="nav-logo">
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="order.html">Order Status</a></li>
+                </ul>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+            
+            <a href="product.html" class="header-btn">Explore Our Products</a>
+        </header>
+
+        <section class="products-section">
+            <h2 class="section-title">Premium Organic Spices</h2>
+            <p class="subtitle">Ethically sourced and sustainably harvested to bring authentic flavors to your table</p>
+            
+            <div class="filter-container">
+                <div class="filter-group">
+                    <label for="category" class="filter-label">Category</label>
+                    <select id="category" class="filter-select">
+                        <option value="all">All Categories</option>
+                        <option value="cinnamon">Cinnamon</option>
+                        <option value="pepper">Pepper</option>
+                        <option value="turmeric">Turmeric</option>
+                        <option value="cloves">Cloves</option>
+                        <option value="cardamom">Cardamom</option>
+                        <option value="sets">Gift Sets</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="sort" class="filter-label">Sort By</label>
+                    <select id="sort" class="filter-select">
+                        <option value="popularity">Most Popular</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="newest">Newest Arrivals</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="price" class="filter-label">Price Range</label>
+                    <select id="price" class="filter-select">
+                        <option value="all">All Prices</option>
+                        <option value="under-10">Under Rs:1000</option>
+                        <option value="10-20">Rs:10 - Rs:2000</option>
+                        <option value="20-30">Rs:20 - Rs:3000</option>
+                        <option value="over-30">Over Rs:3000</option>
+                    </select>
+                </div>
+                
+                <div class="search-box">
+                    <input type="text" placeholder="Search products..." class="search-input">
+                    <i class="search-icon">🔍</i>
+                </div>
+            </div>
+            
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="photos/Gotukola.png" alt="Gotu Kola" class="product-img">
+                    <div class="product-info">
+                        <p class="product-category">Herbs</p>
+                        <h3 class="product-title">Gotu Kola</h3>
+                        <p class="product-desc">A nutrient-rich herb known for boosting memory and cognitive function.</p>
+                        <div class="product-meta">
+                            <span class="product-price">Rs 1200</span>
+                            <span class="product-rating">★★★★☆</span>
+                        </div>
+                        <a href="#" class="add-to-cart">Add to Cart</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="photos/moringa.png" alt="Moringa Leaves" class="product-img">
+                    <div class="product-info">
+                        <p class="product-category">Herbs</p>
+                        <h3 class="product-title">Moringa Leaves</h3>
+                        <p class="product-desc">Packed with antioxidants and essential nutrients for immunity and energy.</p>
+                        <div class="product-meta">
+                            <span class="product-price">Rs 1000</span>
+                            <span class="product-rating">★★★☆☆</span>
+                        </div>
+                        <a href="#" class="add-to-cart">Add to Cart</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="photos/lemongrass.png" alt="Lemongrass Leaves" class="product-img">
+                    <div class="product-info">
+                        <p class="product-category">Herbs</p>
+                        <h3 class="product-title">Lemongrass Leaves</h3>
+                        <p class="product-desc">A refreshing herb with citrus aroma, great for digestion and relaxation.</p>
+                        <div class="product-meta">
+                            <span class="product-price">Rs 800</span>
+                            <span class="product-rating">★★★☆☆</span>
+                        </div>
+                        <a href="#" class="add-to-cart">Add to Cart</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="photos/basil.png" alt="Holy Basil Leaves" class="product-img">
+                    <div class="product-info">
+                        <p class="product-category">Herbs</p>
+                        <h3 class="product-title">Holy Basil Leaves</h3>
+                        <p class="product-desc">An Ayurvedic herb that supports immunity, stress relief, and overall wellness.</p>
+                        <div class="product-meta">
+                            <span class="product-price">Rs 900</span>
+                            <span class="product-rating">★★★★★</span>
+                        </div>
+                        <a href="#" class="add-to-cart">Add to Cart</a>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <img src="photos/butterfly.png" alt="Butterfly Leaves" class="product-img">
+                    <div class="product-info">
+                        <p class="product-category">Herbs</p>
+                        <h3 class="product-title">Butterfly Leaves</h3>
+                        <p class="product-desc">A vibrant antioxidant-rich herb, often used in teas and skincare.</p>
+                        <div class="product-meta">
+                            <span class="product-price">Rs 700</span>
+                            <span class="product-rating">★★☆☆☆</span>
+                        </div>
+                        <a href="#" class="add-to-cart">Add to Cart</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="photos/cinnamon.png" alt="Ceylon Cinnamon" class="product-img">
+                    <div class="product-info">
+                        <p class="product-category">Spices</p>
+                        <h3 class="product-title">Ceylon Cinnamon</h3>
+                        <p class="product-desc">A world-famous spice with a sweet aroma, known for its health benefits.</p>
+                        <div class="product-meta">
+                            <span class="product-price">Rs 1100</span>
+                            <span class="product-rating">★★★★★</span>
+                        </div>
+                        <a href="#" class="add-to-cart">Add to Cart</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="photos/kothala.png" alt="Kothala Himbutu" class="product-img">
+                    <div class="product-info">
+                        <p class="product-category">Herbs</p>
+                        <h3 class="product-title">Kothala Himbutu</h3>
+                        <p class="product-desc">A traditional herb used to regulate blood sugar and support digestion.</p>
+                        <div class="product-meta">
+                            <span class="product-price">Rs 1500</span>
+                            <span class="product-rating">★★★★☆</span>
+                        </div>
+                        <a href="#" class="add-to-cart">Add to Cart</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="photos/tumeric.png" alt="Turmeric Powder" class="product-img">
+                    <div class="product-info">
+                        <p class="product-category">Spices</p>
+                        <h3 class="product-title">Turmeric Powder</h3>
+                        <p class="product-desc">A golden spice with powerful anti-inflammatory and healing properties.</p>
+                        <div class="product-meta">
+                            <span class="product-price">Rs 800</span>
+                            <span class="product-rating">★★★☆☆</span>
+                        </div>
+                        <a href="#" class="add-to-cart">Add to Cart</a>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <img src="photos/cloves.png" alt="Cloves" class="product-img">
+                    <div class="product-info">
+                        <p class="product-category">Spices</p>
+                        <h3 class="product-title">Cloves</h3>
+                        <p class="product-desc">A fragrant spice with antiseptic properties, used in cooking and remedies.</p>
+                        <div class="product-meta">
+                            <span class="product-price">Rs 900</span>
+                            <span class="product-rating">★☆☆☆☆</span>
+                        </div>
+                        <a href="#" class="add-to-cart">Add to Cart</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="photos/nutmeg.png" alt="Nutmeg & Mace" class="product-img">
+                    <div class="product-info">
+                        <p class="product-category">Spices</p>
+                        <h3 class="product-title">Nutmeg & Mace</h3>
+                        <p class="product-desc">Aromatic spices that enhance flavor and aid digestion.</p>
+                        <div class="product-meta">
+                            <span class="product-price">Rs 1200</span>
+                            <span class="product-rating">★★★★☆</span>
+                        </div>
+                        <a href="#" class="add-to-cart">Add to Cart</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="photos/cardmom.png" alt="Cardamom" class="product-img">
+                    <div class="product-info">
+                        <p class="product-category">Spices</p>
+                        <h3 class="product-title">Cardamom</h3>
+                        <p class="product-desc">A sweet and spicy aromatic spice used in teas, curries, and desserts.</p>
+                        <div class="product-meta">
+                            <span class="product-price">Rs 1500</span>
+                            <span class="product-rating">★★☆☆☆</span>
+                        </div>
+                        <a href="#" class="add-to-cart">Add to Cart</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="photos/garlic.png" alt="Black Garlic" class="product-img">
+                    <div class="product-info">
+                        <p class="product-category">Spices</p>
+                        <h3 class="product-title">Black Garlic</h3>
+                        <p class="product-desc">A fermented garlic variety with a sweet umami taste, rich in antioxidants.</p>
+                        <div class="product-meta">
+                            <span class="product-price">Rs 1400</span>
+                            <span class="product-rating">★★★★★</span>
+                        </div>
+                        <a href="#" class="add-to-cart">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pagination">
+                <a href="#" class="page-link active">1</a>
+                <a href="#" class="page-link">2</a>
+                <a href="#" class="page-link">3</a>
+                <a href="#" class="page-link">Next →</a>
+            </div>
+        </section>
+        
+      <footer>
+    <div class="footer-container">
+      <div class="footer-col">
+        <h3 class="footer-title">Ceylon Organic</h3>
+        <p>Premium organic spices sourced directly from Sri Lanka's finest spice gardens.</p>
+        <p>Contact us: ceylonorganic@gmail.com</p>
+        <p>Phone: +94 076 779 9288</p>
+      </div>
+      
+      <div class="footer-col">
+        <h3 class="footer-title">Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="product.html">Products</a></li>
+          <li><a href="cart.html">Cart</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="order.html">Order Status</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-col">
+        <h3 class="footer-title">Photo Gallery</h3>
+        <div class="footer-gallery">
+          <img src="photos/8.png" alt="Ceylon Spice Garden" class="gallery-img" data-caption="Our beautiful spice garden in central Sri Lanka">
+          <img src="photos/photo7.png" alt="Spice Harvesting" class="gallery-img" data-caption="Traditional harvesting techniques preserve quality">
+          <img src="photos/photos5.png" alt="Spice Processing" class="gallery-img" data-caption="Carefully processing spices to maintain freshness">
+          <img src="photos/photo1.jpg" alt="Organic Packaging" class="gallery-img" data-caption="Environmentally friendly packaging for all our products">
+          <img src="photos/history.png" alt="Ceylon Spice Market" class="gallery-img" data-caption="Local spice markets where we source our ingredients">
+          <img src="photos/photos5.png" alt="Culinary Applications" class="gallery-img" data-caption="Our spices enhance flavors in traditional cuisine">
+        </div>
+      </div>
+      
+      <div class="footer-col">
+        <h3 class="footer-title">Join Our Newsletter</h3>
+        <p>Subscribe to receive updates, recipes, and exclusive offers.</p>
+        <form class="newsletter-form">
+          <input type="email" class="newsletter-input" placeholder="Your email address" required>
+          <button type="submit" class="newsletter-btn">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    
+    <div class="copyright">
+      <p>&copy; 2025 Ceylon Organic. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="home.js"></script>
+
+  <script src="product.js"></script>
+    </body>
+</html>

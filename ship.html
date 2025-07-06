@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shipping Information - Ceylon Organic</title>
+  <link rel="stylesheet" href="ship.css">
+  <link rel="stylesheet" href="cart.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header (same as cart.html) -->
+  <header>
+    <div class="video-container">
+      <video autoplay muted loop class="video-bg">
+        <source src="videos/3.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    
+    <img src="photos/logo.png" alt="Ceylon Organic Logo" class="nav-logo">
+    <nav>
+      <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="product.html">Products</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="order.html">Order Status</a></li>
+      </ul>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+    
+    <a href="product.html" class="header-btn">Explore Our Products</a>
+  </header>
+
+  <main class="checkout-page">
+    <div class="container">
+      <div class="page-title-container">
+        <h1 class="page-title">Shipping Information</h1>
+        <div class="breadcrumb">
+          <a href="home.html">Home</a> / 
+          <a href="product.html">Products</a> / 
+          <a href="cart.html">Cart</a> / 
+          <span>Shipping</span>
+        </div>
+      </div>
+
+      <div class="navigation-buttons">
+        <a href="cart.html" class="btn-back">Back to Cart</a>
+        <a href="payment.html" class="btn-continue">Continue to Payment</a>
+      </div>
+
+      <!-- Checkout Progress -->
+      <div class="checkout-progress">
+        <div class="progress-step">
+          <a href="cart.html">
+            <div class="step-circle">1</div>
+            <div class="step-name">Cart</div>
+          </a>
+        </div>
+        <div class="progress-line"></div>
+        <div class="progress-step active">
+          <a href="ship.html">
+            <div class="step-circle">2</div>
+            <div class="step-name">Shipping</div>
+          </a>
+        </div>
+        <div class="progress-line"></div>
+        <div class="progress-step">
+          <a href="payment.html">
+            <div class="step-circle">3</div>
+            <div class="step-name">Payment</div>
+          </a>
+        </div>
+        <div class="progress-line"></div>
+        <div class="progress-step">
+          <a href="confirm.html">
+            <div class="step-circle">4</div>
+            <div class="step-name">Confirmation</div>
+          </a>
+        </div>
+      </div>
+
+      <div class="checkout-layout">
+        <!-- Shipping Form -->
+        <div class="checkout-form-container">
+          <form id="shipping-form">
+            <h2>Shipping Address</h2>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first-name" required>
+              </div>
+              <div class="form-group">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name" required>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="address">Address</label>
+              <input type="text" id="address" name="address" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="address2">Address 2 (Optional)</label>
+              <input type="text" id="address2" name="address2">
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="city">City</label>
+                <input type="text" id="city" name="city" required>
+              </div>
+              <div class="form-group">
+                <label for="postal-code">Postal Code</label>
+                <input type="text" id="postal-code" name="postal-code" required>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="country">Country</label>
+              <select id="country" name="country" required>
+                <option value="">Select Country</option>
+                <option value="Sri Lanka" selected>Sri Lanka</option>
+                <option value="India">India</option>
+                <option value="USA">United States</option>
+                <option value="UK">United Kingdom</option>
+                <option value="Canada">Canada</option>
+                <option value="Australia">Australia</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group checkbox-group">
+              <input type="checkbox" id="save-info" name="save-info">
+              <label for="save-info">Save this information for next time</label>
+            </div>
+            
+            <h2>Shipping Method</h2>
+            <div class="shipping-methods">
+              <label class="shipping-method">
+                <input type="radio" name="shipping-method" value="standard" checked>
+                <div class="method-info">
+                  <div class="method-title">Standard Delivery</div>
+                  <div class="method-desc">3-5 business days</div>
+                </div>
+                <div class="method-price">Rs 500</div>
+              </label>
+              
+              <label class="shipping-method">
+                <input type="radio" name="shipping-method" value="express">
+                <div class="method-info">
+                  <div class="method-title">Express Delivery</div>
+                  <div class="method-desc">1-2 business days</div>
+                </div>
+                <div class="method-price">Rs 950</div>
+              </label>
+            </div>
+            
+            <div class="form-actions">
+              <a href="cart.html" class="back-btn">Back to Cart</a>
+              <button type="submit" class="continue-btn">Continue to Payment</button>
+            </div>
+          </form>
+        </div>
+        
+        <!-- Order Summary -->
+        <div class="checkout-summary">
+          <h2>Order Summary</h2>
+          <div class="summary-items">
+            <!-- Items will be populated by JavaScript -->
+          </div>
+          
+          <div class="summary-totals">
+            <div class="summary-row">
+              <span>Subtotal</span>
+              <span id="summary-subtotal">Rs 3500</span>
+            </div>
+            <div class="summary-row">
+              <span>Shipping</span>
+              <span id="summary-shipping">Rs 500</span>
+            </div>
+            <div class="summary-row">
+              <span>Tax</span>
+              <span id="summary-tax">Rs 350</span>
+            </div>
+            <div class="summary-row total">
+              <span>Total</span>
+              <span id="summary-total">Rs 4350</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+    <!-- Footer retained from original -->
+    <footer>
+        <div class="footer-container">
+          <div class="footer-col">
+            <h3 class="footer-title">Ceylon Organic</h3>
+            <p>Premium organic spices sourced directly from Sri Lanka's finest spice gardens.</p>
+            <p>Contact us: ceylonorganic@gmai.com</p>
+            <p>Phone: +94 076 779 9288</p>
+          </div>
+          
+          <div class="footer-col">
+            <h3 class="footer-title">Quick Links</h3>
+            <ul class="footer-links">
+              <li><a href="home.html">Home</a></li>
+              <li><a href="aboutus.html">About Us</a></li>
+              <li><a href="product.html">Products</a></li>
+              <li><a href="cart.html">Cart</a></li>
+              <li><a href="login.html">Login</a></li>
+              <li><a href="order.html">Order Status</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-col">
+            <h3 class="footer-title">Photo Gallery</h3>
+            <div class="footer-gallery">
+              <img src="photos/8.png" alt="Ceylon Spice Garden" class="gallery-img" data-caption="Our beautiful spice garden in central Sri Lanka">
+              <img src="photos/photo7.png" alt="Spice Harvesting" class="gallery-img" data-caption="Traditional harvesting techniques preserve quality">
+              <img src="photos/photos5.png" alt="Spice Processing" class="gallery-img" data-caption="Carefully processing spices to maintain freshness">
+              <img src="photos/photo1.jpg" alt="Organic Packaging" class="gallery-img" data-caption="Environmentally friendly packaging for all our products">
+              <img src="photos/history.png" alt="Ceylon Spice Market" class="gallery-img" data-caption="Local spice markets where we source our ingredients">
+              <img src="photos/photos5.png" alt="Culinary Applications" class="gallery-img" data-caption="Our spices enhance flavors in traditional cuisine">
+            </div>
+          </div>
+          
+          <div class="footer-col">
+            <h3 class="footer-title">Join Our Newsletter</h3>
+            <p>Subscribe to receive updates, recipes, and exclusive offers.</p>
+            <form>
+              <input type="email" placeholder="Your email address" style="padding: 10px; width: 100%; margin-top: 10px; border: none; border-radius: 5px;">
+              <button type="submit" style="background-color: #4CAF50; color: white; border: none; padding: 10px; width: 100%; margin-top: 10px; border-radius: 5px; cursor: pointer;">Subscribe</button>
+            </form>
+          </div>
+        </div>
+        
+        <div class="copyright">
+          <p>&copy; 2025 Ceylon Organic. All rights reserved.</p>
+        </div>
+      </footer>
+      
+      <a href="#" class="discount-btn">20% OFF FIRST ORDER</a>
+  
+      <!-- Add to Cart Notification -->
+      <div class="notification" id="notification">
+        <div class="notification-content">
+          <i class="fas fa-check-circle"></i>
+          <span id="notification-message">Item added to cart!</span>
+        </div>
+      </div>
+
+  <script src="ship.js"></script>
+  <script src="home.js"></script>
+  
+</body>
+</html>
